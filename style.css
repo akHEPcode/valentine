@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Georgia", serif;
+}
+
+body {
+  height: 100vh;
+  background: radial-gradient(circle at top, #3a0f1c, #12060a);
+  color: #f5e6eb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 700px;
+  animation: fadeIn 1.5s ease;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+p {
+  font-size: 1.3rem;
+  line-height: 1.8;
+  margin-bottom: 1.2rem;
+}
+
+.bn {
+  font-size: 1.2rem;
+  opacity: 0.85;
+}
+
+button {
+  padding: 0.7rem 1.5rem;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  margin: 0.5rem;
+  font-size: 1rem;
+}
+
+.primary {
+  background: #ff5c8a;
+  color: white;
+}
+
+.secondary {
+  background: #555;
+  color: white;
+}
+
+a.button-link {
+  text-decoration: none;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* A❤️S Hearts */
+.heart {
+  position: absolute;
+  color: #ff5c8a;
+  font-size: 18px;
+  animation: floatUp 6s linear infinite;
+}
+
+@keyframes floatUp {
+  from { transform: translateY(100vh); opacity: 1; }
+  to { transform: translateY(-10vh); opacity: 0; }
+}
