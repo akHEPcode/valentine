@@ -3,12 +3,18 @@
 <head>
   <title>The Question</title>
   <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
 </head>
 <body>
+<audio id="bgMusic" loop>
+  <source src="https://cdn.pixabay.com/audio/2022/10/26/audio_6d1c8b64b1.mp3" type="audio/mpeg">
+</audio>
+
 <div class="container">
   <h1>Will you be my Valentine?</h1>
   <a href="yes.html"><button class="primary">Yes</button></a>
-  <a href="no.html"><button class="secondary">No</button></a>
+  <button id="noBtn" class="secondary" onmouseover="moveNoButton()">No</button>
 </div>
+
 </body>
 </html>
